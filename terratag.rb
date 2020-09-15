@@ -2,12 +2,12 @@
 class Terratag < Formula
   desc "Automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources on Terraform"
   homepage "https://github.com/env0/terratag"
-  version "0.1.43"
+  version "0.1.45"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/env0/terratag/releases/download/v0.1.43/terratag_0.1.43_darwin_amd64.tar.gz"
-    sha256 "a615aeffc6336a76cebc4f59b81f6b49545b8e595e8f195dd23ba3291e1f11df"
+    url "https://github.com/env0/terratag/releases/download/v0.1.45/terratag_0.1.45_darwin_amd64.tar.gz"
+    sha256 "f6e895249ce34c457ffa024153df7db31f724ea22558b138019978805963f13e"
   elsif OS.linux?
   end
 
