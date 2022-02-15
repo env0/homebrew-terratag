@@ -5,12 +5,12 @@
 class Terratag < Formula
   desc "Automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources on Terraform"
   homepage "https://github.com/env0/terratag"
-  version "0.1.34"
+  version "0.1.35"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/env0/terratag/releases/download/v0.1.34/terratag_0.1.34_darwin_amd64.tar.gz"
-      sha256 "82c2c49b6b6e9259d6e7cff9a29e6198c8be477a134efeee5cbfecef3e13aaf8"
+      url "https://github.com/env0/terratag/releases/download/v0.1.35/terratag_0.1.35_darwin_amd64.tar.gz"
+      sha256 "c274ab08401fc8aa6b39f12bbc942521c5a5dcc1496fe3787003d5c83177c49f"
 
       def install
         bin.install "terratag"
@@ -20,8 +20,8 @@ class Terratag < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/env0/terratag/releases/download/v0.1.34/terratag_0.1.34_linux_amd64.tar.gz"
-      sha256 "bfd059190014b5c78e92b146679e6f19620557a6442c79e045a678e3f7ec2d0c"
+      url "https://github.com/env0/terratag/releases/download/v0.1.35/terratag_0.1.35_linux_amd64.tar.gz"
+      sha256 "30abb6af05f7bd9655fd903ebe43405505e3cd57b9fd2731fdd8a4d080047d48"
 
       def install
         bin.install "terratag"
