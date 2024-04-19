@@ -5,20 +5,20 @@
 class Terratag < Formula
   desc "Automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources on Terraform"
   homepage "https://github.com/env0/terratag"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/env0/terratag/releases/download/v0.3.3/terratag_0.3.3_darwin_arm64.tar.gz"
-      sha256 "a4a6ad3fd29c5559354766aaef3b35f22fbd004bc8c52d01da3d673371954b56"
+    if Hardware::CPU.intel?
+      url "https://github.com/env0/terratag/releases/download/v0.3.4/terratag_0.3.4_darwin_amd64.tar.gz"
+      sha256 "eb451dda2a9dc19351be8101f423e9a570d0854a20fd8a630ccfd8e60d6efc1b"
 
       def install
         bin.install "terratag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/env0/terratag/releases/download/v0.3.3/terratag_0.3.3_darwin_amd64.tar.gz"
-      sha256 "d21c412544e62a95ac4ac78a3079628976b2765f929a48c2408ad3827820f756"
+    if Hardware::CPU.arm?
+      url "https://github.com/env0/terratag/releases/download/v0.3.4/terratag_0.3.4_darwin_arm64.tar.gz"
+      sha256 "f5c497d21913c656cae0bfbc309ce6903f04bca6859a467aaab81f1184a5ac0e"
 
       def install
         bin.install "terratag"
@@ -27,17 +27,17 @@ class Terratag < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/env0/terratag/releases/download/v0.3.3/terratag_0.3.3_linux_arm64.tar.gz"
-      sha256 "4ec2ff93e9778ce80886ff15568bb75a5ecfe711946df0ea5e3981c12523619b"
+    if Hardware::CPU.intel?
+      url "https://github.com/env0/terratag/releases/download/v0.3.4/terratag_0.3.4_linux_amd64.tar.gz"
+      sha256 "62d73895841580148d1bdd6ae1c4a9cafe1db7c92af24a9d76653bb85effa0fb"
 
       def install
         bin.install "terratag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/env0/terratag/releases/download/v0.3.3/terratag_0.3.3_linux_amd64.tar.gz"
-      sha256 "d283712520dc282decaf2982c957590a96d3eea925586b90b9e0a70e6d2b0c48"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/env0/terratag/releases/download/v0.3.4/terratag_0.3.4_linux_arm64.tar.gz"
+      sha256 "a336907b6aec2339e3d505c9fef66c30d1a8cb16434b05d68a0b69ad72be0b61"
 
       def install
         bin.install "terratag"
