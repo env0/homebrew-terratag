@@ -5,20 +5,20 @@
 class Terratag < Formula
   desc "Automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources on Terraform"
   homepage "https://github.com/env0/terratag"
-  version "0.5.3"
+  version "0.6.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/env0/terratag/releases/download/v0.5.3/terratag_0.5.3_darwin_amd64.tar.gz"
-      sha256 "98b931aaaca6c62b2b63166cc4e8e4f6fa36bc88a676338347df181fa544b101"
+      url "https://github.com/env0/terratag/releases/download/v0.6.0/terratag_0.6.0_darwin_amd64.tar.gz"
+      sha256 "acbf6c9fc012ac9ff359f2a200ffd3263cd417e3c2ba1f1072d451bfdc7f3296"
 
       def install
         bin.install "terratag"
       end
     end
     on_arm do
-      url "https://github.com/env0/terratag/releases/download/v0.5.3/terratag_0.5.3_darwin_arm64.tar.gz"
-      sha256 "a473c2f3834da060d0a9ae37eb2f3afb9c2061f5ef540967ed28796fc99f8af0"
+      url "https://github.com/env0/terratag/releases/download/v0.6.0/terratag_0.6.0_darwin_arm64.tar.gz"
+      sha256 "5b8b931f69d4f2e30aef315a2fef33680866c5c650226c241d66e2aedac497c6"
 
       def install
         bin.install "terratag"
@@ -29,8 +29,8 @@ class Terratag < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/env0/terratag/releases/download/v0.5.3/terratag_0.5.3_linux_amd64.tar.gz"
-        sha256 "8c6326dbec3e1f7a74c66cbf28b39a7f1229f7533ac2e9435c23362f752e0be9"
+        url "https://github.com/env0/terratag/releases/download/v0.6.0/terratag_0.6.0_linux_amd64.tar.gz"
+        sha256 "59ba0ccfd93f21b894a56e09cfb9b56c42a0a17fb37f4e975ef0f9cd3d91ac58"
 
         def install
           bin.install "terratag"
@@ -39,8 +39,8 @@ class Terratag < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/env0/terratag/releases/download/v0.5.3/terratag_0.5.3_linux_arm64.tar.gz"
-        sha256 "88825c47a93f0120f45f74a7af956636837a186404f9c89b17ef35b6a8ddcf28"
+        url "https://github.com/env0/terratag/releases/download/v0.6.0/terratag_0.6.0_linux_arm64.tar.gz"
+        sha256 "1d23a9da4e4f78ee4216453d1e8805d3a8b29b2480f60d9b818225ba7d66f264"
 
         def install
           bin.install "terratag"
