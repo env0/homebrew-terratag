@@ -10,7 +10,7 @@ class Terratag < Formula
   on_macos do
     on_intel do
       url "https://github.com/env0/terratag/releases/download/v0.7.7/terratag_0.7.7_darwin_amd64.tar.gz"
-      sha256 "5061c072d7101dcce938fbf560754ba0f34a594827fef8930372067daf898ad8"
+      sha256 "126fc63e09ecded3b38dc87195cbe10f21278e6c9ef436f217d210bd0dbaef23"
 
       def install
         bin.install "terratag"
@@ -18,7 +18,7 @@ class Terratag < Formula
     end
     on_arm do
       url "https://github.com/env0/terratag/releases/download/v0.7.7/terratag_0.7.7_darwin_arm64.tar.gz"
-      sha256 "6c780afdb3c8ca6deff1399cc740d08d5fb1005c6955bfa51ae970ef8db9d28a"
+      sha256 "4e32cc865be50c2c4547d437ce476a2e94899aec61b899a759c14453af16253b"
 
       def install
         bin.install "terratag"
@@ -30,7 +30,7 @@ class Terratag < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/env0/terratag/releases/download/v0.7.7/terratag_0.7.7_linux_amd64.tar.gz"
-        sha256 "1707919d6aa98ba1a83b3ed270c1ce6a022a20d2482ac1b72c159454eadd0c8e"
+        sha256 "718545e26e8879ac6ab3f8c50fe3c1e5459c98b2b5a7bafe00da9320f1ad47bd"
 
         def install
           bin.install "terratag"
@@ -40,7 +40,7 @@ class Terratag < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/env0/terratag/releases/download/v0.7.7/terratag_0.7.7_linux_arm64.tar.gz"
-        sha256 "b53a5d49563abacb5ffe1c945e42edbfd1663f16fc6de5c17783276de997fc2f"
+        sha256 "96be60973f72f9aa2513d6b0dc8b1f170ed93ee1eaea84af34ced2877f6b4dcd"
 
         def install
           bin.install "terratag"
